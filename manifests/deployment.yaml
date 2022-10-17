@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: spring-boot-__CI_COMMIT_REF_SLUG__
+  labels:
+    app: spring-boot-__CI_COMMIT_REF_SLUG__
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-boot-__CI_COMMIT_REF_SLUG__
+  template:
+    metadata:
+      labels:
+        app: spring-boot-__CI_COMMIT_REF_SLUG__
+    spec:
+      containers:
+      - name: app
+        image: __HARBOR_URL__/demo/spring-boot:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+
