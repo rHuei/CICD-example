@@ -9,8 +9,8 @@ pipeline {
        stage('build') {
           steps {
               sh 'whoami'
-              sh 'sudo docker build -t hb.k8sbridge.com/demo/spring-boot:latest .'
-              sh 'sudo docker images'
+              sh 'docker build -t hb.k8sbridge.com/demo/spring-boot:latest .'
+              sh 'docker images'
           }
        }
     }
