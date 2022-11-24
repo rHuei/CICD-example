@@ -1,1 +1,1 @@
-# CICD DEMO v0.6-prod
+# CICD DEMO v0.7-prod
