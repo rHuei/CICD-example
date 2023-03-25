@@ -1,2 +1,2 @@
 # CICD DEMO
-v0.6-stage
+v0.7-stage
