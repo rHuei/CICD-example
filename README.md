@@ -1,3 +1,3 @@
 # CICD DEMO
-v0.7-stage
+v0.8-stage
 SCSB test commit mirror
